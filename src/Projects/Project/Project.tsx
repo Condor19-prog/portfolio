@@ -9,7 +9,7 @@ const Project: React.FC<projectType> = ({title, description}) => {
 
     return (
         <div className={style.projectBlock}>
-            <div className={style.icon}>
+            <div className={style.imgContainer}>
                 <a className={style.viewBtn}>
                     View
                 </a>

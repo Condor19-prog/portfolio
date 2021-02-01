@@ -6,7 +6,7 @@
     align-items: center; /*выравнивает по второстипенной оси*/
     text-align: center; /*выравнивает строчный внутри блочных по горизонтали*/
 }
-.icon{
+.imgContainer{
     width: 60px;
     height: 60px;
     background-color: #560000;
