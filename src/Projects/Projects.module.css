@@ -1,10 +1,10 @@
 .projectsBlock{
     min-height: 100vh;
     background-color: #a5ffff;
+    padding-top: 50px;
 }
 .projectsContainer{
     flex-direction: column;
-    /*justify-content: flex-start;*/
 }
 .title{
     background-color: #ff5252;
@@ -15,5 +15,4 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-
 }

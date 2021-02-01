@@ -1,0 +1,28 @@
+.contactsContainer {
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.contactsBlock{
+    min-height: 100%;
+    background-color: #3eb5ff;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+.btnContacts{
+    margin: 20px 40px;
+}
+.formStyle{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    background-color: #f6a0ff;
+}

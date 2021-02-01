@@ -4,6 +4,8 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
+import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer/Footer";
 
 const App = () => {
     return (
@@ -12,6 +14,8 @@ const App = () => {
             <Main/>
             <Skills title={'Skills'}/>
             <Projects title={'Projects'}/>
+            <Contacts title={'Contacts'}/>
+            <Footer/>
         </div>
     );
 }
