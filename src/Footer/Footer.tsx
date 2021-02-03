@@ -8,10 +8,10 @@ const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.title}>Yauheni Auchynnikau</h2>
                 <div className={style.footerSocialContainer}>
-                    <a className={style.socialNetwork}></a>
-                    <a className={style.socialNetwork}></a>
-                    <a className={style.socialNetwork}></a>
-                    <a className={style.socialNetwork}></a>
+                    <div className={style.socialNetwork}></div>
+                    <div className={style.socialNetwork}></div>
+                    <div className={style.socialNetwork}></div>
+                    <div className={style.socialNetwork}></div>
                 </div>
                 <p>только не по голове палкой)</p>
             </div>
