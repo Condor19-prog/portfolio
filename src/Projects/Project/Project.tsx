@@ -1,10 +1,11 @@
 import React from "react";
-import style from './Project.module.css'
+import style from './Project.module.scss'
 
 type projectType = {
     title: string
     description: string
     styled: any
+    linkToGitHubPages: string
 }
 
 const Project = (props: projectType) => {
@@ -12,9 +13,11 @@ const Project = (props: projectType) => {
     return (
         <div className={style.projectBlock}>
             <div className={style.imgContainer} style={props.styled}>
-                <a className={style.viewBtn}>
-                    View
-                </a>
+                <div className={style.viewBtn}>
+                    <a className={style.button} href={''}>
+                        View
+                    </a>
+                </div>
             </div>
             <div className={style.footer}>
                 <div className={style.title}>

@@ -1,5 +1,5 @@
 import React from "react";
-import style from './Projects.module.css'
+import style from './Projects.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import Project from "./Project/Project";
 import Title from "../common/components/title/Title";
@@ -25,11 +25,15 @@ const Projects: React.FC<projectsType> = ({title}) => {
                     <Project
                         styled={social}
                         title={'Social-network'}
-                        description={''}/>
+                        description={''}
+                        linkToGitHubPages={'https://condor19-prog.github.io/socialNetwork'}
+                    />
                     <Project
                         styled={todolist}
                         title={'Todolist'}
-                        description={'Сервис позволяет организовать свои задачи в списки и контролировать их выполнение.'}/>
+                        description={'Сервис позволяет организовать свои задачи в списки и контролировать их выполнение.'}
+                        linkToGitHubPages={'https://condor19-prog.github.io/new-todolist/'}
+                    />
                 </div>
             </div>
         </div>
