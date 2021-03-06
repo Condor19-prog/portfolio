@@ -4,12 +4,14 @@ import style from './Project.module.css'
 type projectType = {
     title: string
     description: string
+    styled: any
 }
-const Project: React.FC<projectType> = ({title, description}) => {
 
+const Project = (props: projectType) => {
+    const {title, description} = props
     return (
         <div className={style.projectBlock}>
-            <div className={style.imgContainer}>
+            <div className={style.imgContainer} style={props.styled}>
                 <a className={style.viewBtn}>
                     View
                 </a>
