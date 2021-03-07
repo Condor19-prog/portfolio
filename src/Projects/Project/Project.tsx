@@ -5,7 +5,7 @@ type projectType = {
     title: string
     description: string
     styled: any
-    linkToGitHubPages: string
+    linkTo: string
 }
 
 const Project = (props: projectType) => {
@@ -14,7 +14,7 @@ const Project = (props: projectType) => {
         <div className={style.projectBlock}>
             <div className={style.imgContainer} style={props.styled}>
                 <div className={style.viewBtn}>
-                    <a className={style.button} href={''}>
+                    <a className={style.button} href={props.linkTo}>
                         View
                     </a>
                 </div>

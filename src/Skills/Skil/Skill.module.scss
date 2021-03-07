@@ -1,0 +1,14 @@
+.skill {
+  width: 250px;
+  background-color: #ffeded;
+  display: flex;
+  flex-direction: column; /*главная координата вертикаль*/
+  align-items: center; /*выравнивает по второстипенной оси*/
+  text-align: center; /*выравнивает строчный внутри блочных по горизонтали*/
+  margin-bottom: 20px;
+
+  .imgContainer {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -6,10 +6,7 @@ import Title from "../common/components/title/Title";
 import socialNetwork from '../assets/image/socialNetwork.jpg'
 import myTodolist from '../assets/image/todolists.png'
 
-type projectsType = {
-    title: string
-}
-const Projects: React.FC<projectsType> = ({title}) => {
+const Projects = () => {
     const social = {
         backgroundImage: `url(${socialNetwork})`
     }
@@ -26,13 +23,13 @@ const Projects: React.FC<projectsType> = ({title}) => {
                         styled={social}
                         title={'Social-network'}
                         description={''}
-                        linkToGitHubPages={'https://condor19-prog.github.io/socialNetwork'}
+                        linkTo={'https://condor19-prog.github.io/social-network'}
                     />
                     <Project
                         styled={todolist}
                         title={'Todolist'}
                         description={'Сервис позволяет организовать свои задачи в списки и контролировать их выполнение.'}
-                        linkToGitHubPages={'https://condor19-prog.github.io/new-todolist/'}
+                        linkTo={'https://condor19-prog.github.io/new-todolist/'}
                     />
                 </div>
             </div>

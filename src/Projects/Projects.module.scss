@@ -1,5 +1,6 @@
+@import './src/common/styles/sass/variable';
 .projectsBlock {
-  background-color: #1f1f20;
+  background-color: $bgColor;
 
   .projectsContainer {
     flex-direction: column;

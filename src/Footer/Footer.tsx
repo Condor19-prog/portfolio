@@ -1,19 +1,36 @@
 import React from "react";
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
+import SocialNetwork from "./socialNetwork/socialNetwork";
+import git from '../assets/image/github.svg'
+import vk from '../assets/image/vk.svg'
+import linkedIn from '../assets/image/in.svg'
+
 
 const Footer = () => {
+    const gitHub = {
+        link: 'https://github.com/Condor19-prog',
+        image: git
+    }
+    const vkImage = {
+        link: 'https://vk.com/id185786693',
+        image: vk
+    }
+    const linkedInImage = {
+        link: '404',
+        image: linkedIn
+    }
+
+
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Yauheni Auchynnikau</h2>
+                {/*<h2 className={style.title}>Yauheni</h2>*/}
                 <div className={style.footerSocialContainer}>
-                    <div className={style.socialNetwork}></div>
-                    <div className={style.socialNetwork}></div>
-                    <div className={style.socialNetwork}></div>
-                    <div className={style.socialNetwork}></div>
+                    <SocialNetwork link={gitHub.link} image={gitHub.image}/>
+                    <SocialNetwork link={vkImage.link} image={vkImage.image}/>
+                    <SocialNetwork link={linkedInImage.link} image={linkedInImage.image}/>
                 </div>
-                <p>только не по голове палкой)</p>
             </div>
         </div>
     )

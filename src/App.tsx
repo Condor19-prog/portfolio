@@ -13,8 +13,8 @@ const App = () => {
             <Header/>
             <Main/>
             <Skills title={'Skills'}/>
-            <Projects title={'Projects'}/>
-            <Contacts title={'Contacts'}/>
+            <Projects/>
+            <Contacts/>
             <Footer/>
         </div>
     );

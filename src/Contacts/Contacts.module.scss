@@ -1,10 +1,11 @@
+@import './src/common/styles/sass/variable';
 .contactsContainer {
     flex-direction: column;
     padding-bottom: 30px;
 }
 .contactsBlock{
     min-height: 100%;
-    background-color: #eeece7;
+    background-color: $bgSecondColor;
 }
 .contacts{
     display: flex;
