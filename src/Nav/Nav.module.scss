@@ -1,0 +1,18 @@
+@import './src/common/styles/sass/variable';
+@import '../common/styles/sass/mixins';
+
+.nav {
+  border: 1px solid;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  @include text($textFontFamily, 18px, 1.8);
+
+  .link {
+    text-decoration: none;
+
+  }
+  a:visited {
+    color: white;
+  }
+}

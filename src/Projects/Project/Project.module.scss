@@ -38,7 +38,6 @@
       a {
         -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-        -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
         display: block;
@@ -51,12 +50,12 @@
 
       a.button {
         color: rgba(255, 255, 255, 0.6);
-        box-shadow: rgb(233, 233, 233) 0 0px 0px 2px inset;
+        box-shadow: rgb(233, 233, 233) 0 0 0 2px inset;
       }
 
       a.button:hover {
         color: rgba(255, 255, 255, 0.85);
-        box-shadow: rgb(123, 159, 219) 0 0px 0px 40px inset;
+        box-shadow: rgb(123, 159, 219) 0 0 0 40px inset;
         cursor: pointer;
       }
     }

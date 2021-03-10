@@ -1,0 +1,45 @@
+@import '../common/styles/sass/mixins';
+@import '../common/styles/sass/variable';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .mainContainer {
+    .text {
+      max-width: 100%;
+      background-color: #4e4e4e;
+      padding-bottom: 20px;
+
+      span {
+        @include text($textFontFamily, 18px, 1.8);
+      }
+
+      h1 {
+        @include text($titleFontFamily, 40px, 1.2);
+        letter-spacing: 5px;
+        margin: 0;
+        color: $textColor;
+        @media screen and (max-width: 1007px) {
+          @include text($textFontFamily, 34px, 1.3);
+        }
+      }
+      p{
+        @include text($titleFontFamily, 27px, 1.8);
+      }
+    }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-color: #cacaca;
+    }
+
+    @media screen and (max-width: 1007px) {
+      justify-content: center;
+    }
+  }
+}
+
+
+

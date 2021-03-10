@@ -1,6 +1,7 @@
+@import './src/common/styles/sass/variable';
 .skillsBlock {
   height: 100%;
-  background-color: #303030;
+  background-color: $bgSecondColor;
 
   .skillsContainer {
     flex-direction: column;
