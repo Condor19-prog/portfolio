@@ -6,6 +6,16 @@
   align-items: center; /*выравнивает по второстипенной оси*/
   text-align: center; /*выравнивает строчный внутри блочных по горизонтали*/
   margin-bottom: 20px;
+  position: relative;
+
+  &:hover {
+    top:-10px;
+    transition: All 0.5s ease;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+  }
+
 
   .imgContainer {
     width: 60px;

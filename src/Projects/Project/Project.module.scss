@@ -18,6 +18,15 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    -webkit-filter: blur(3px);
+    filter: blur(1px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
 
     &::before {
       position: absolute;

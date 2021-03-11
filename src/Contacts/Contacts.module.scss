@@ -1,29 +1,74 @@
 @import './src/common/styles/sass/variable';
-.contactsContainer {
+
+.contactsBlock {
+  min-height: 100%;
+  background-color: $bgSecondColor;
+
+  .contactsContainer {
     flex-direction: column;
     padding-bottom: 30px;
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-width: 450px;
+      @media screen and (max-width: 768px) {
+        min-width: 286px;
+      }
+
+      .formControl {
+        background: $bgColor;
+        border: 1px solid #4a4a4a;
+        font-size: 14px;
+        font-family: inherit;
+        padding: 0 10px;
+        border-radius: 0;
+        height: calc(1.5em + .75rem + 2px);
+        margin-bottom: 22px;
+        outline: none;
+        color: #ffffff;
+      }
+      .btnContacts {
+        width: 150px;
+        height: 60px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #cad4ff;
+        outline: none;
+        transition: 1s ease-in-out;
+        color: white;
+        align-self: center;
+
+        &:hover {
+          transition: 1s ease-in-out;
+          background: white;
+          color: black;
+        }
+
+        //.btnContacts svg {
+        //  position: absolute;
+        //  left: 0;
+        //  top: 0;
+        //  fill: none;
+        //  stroke: $primaryColor;
+        //  stroke-dasharray: 150 480;
+        //  stroke-dashoffset: 150;
+        //  transition: 1s ease-in-out;
+        //
+        //  &:hover svg {
+        //    stroke-dashoffset: -480;
+        //  }
+        //}
+      }
+    }
+  }
 }
-.contactsBlock{
-    min-height: 100%;
-    background-color: $bgSecondColor;
-}
-.contacts{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 300px;
-}
-.btnContacts{
-    margin: 20px 40px;
-}
-.formStyle{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.title{
-    background-color: #f6a0ff;
-}
+
+
+
+
+
+
