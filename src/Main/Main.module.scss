@@ -4,6 +4,7 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
+  padding-top: 6%;
 
   .mainContainer {
     .text {
@@ -24,7 +25,8 @@
           @include text($textFontFamily, 34px, 1.3);
         }
       }
-      p{
+
+      p {
         @include text($titleFontFamily, 27px, 1.8);
       }
     }

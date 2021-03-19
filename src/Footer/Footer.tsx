@@ -2,9 +2,9 @@ import React from "react";
 import style from './Footer.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import SocialNetwork from "./socialNetwork/socialNetwork";
-import git from '../assets/image/github.svg'
-import vk from '../assets/image/vk.svg'
-import linkedIn from '../assets/image/in.svg'
+import git from '../assets/image/footer/github.svg'
+import vk from '../assets/image/footer/vk.svg'
+import linkedIn from '../assets/image/footer/in.svg'
 
 
 const Footer = () => {

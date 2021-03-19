@@ -84,11 +84,20 @@
 
     .description {
       @include text($textFontFamily, 12px, 1.8);
-      //font-family: $textFontFamily;
-      //line-height: 1.8;
-      /*font-weight: 400;*/
-      //font-size: 12px;
-      //color: $textColor;
+    }
+
+    .gitLink {
+      margin-top: 15px;
+
+      a {
+        text-decoration: none;
+        @include text($textFontFamily, 14px, 1.2);
+
+        &:hover {
+          transition: color 0.5s;
+          color: #4e93e6;
+        }
+      }
     }
   }
 }

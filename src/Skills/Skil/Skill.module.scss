@@ -1,24 +1,30 @@
+@import "./src/common/styles/sass/variable";
+@import "./src/common/styles/sass/mixins";
 .skill {
   width: 250px;
-  background-color: #ffeded;
+  height: 100%;
+  @include text($titleFontFamily, 20px, 10px);
+  background-color: $bgColor;
   display: flex;
   flex-direction: column; /*главная координата вертикаль*/
   align-items: center; /*выравнивает по второстипенной оси*/
   text-align: center; /*выравнивает строчный внутри блочных по горизонтали*/
   margin-bottom: 20px;
   position: relative;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+
 
   &:hover {
-    top:-10px;
-    transition: All 0.5s ease;
-    -webkit-transition: All 0.5s ease;
-    -moz-transition: All 0.5s ease;
-    -o-transition: All 0.5s ease;
+    -webkit-transform: translate(0,-10px);
+    -moz-transform: translate(0,-10px);
+    -o-transform: translate(0,-10px);
   }
 
-
   .imgContainer {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 20px;
   }
 }

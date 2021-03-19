@@ -6,6 +6,7 @@ type projectType = {
     description: string
     styled: any
     linkTo: string
+    linkToCode: string
 }
 
 const Project = (props: projectType) => {
@@ -25,6 +26,9 @@ const Project = (props: projectType) => {
                 </div>
                 <div className={style.description}>
                     {description}
+                </div>
+                <div className={style.gitLink}>
+                    <a href={props.linkToCode}>View to code</a>
                 </div>
             </div>
         </div>
