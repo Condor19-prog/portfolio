@@ -12,7 +12,7 @@ const App = () => {
         <div className="App">
             <Header/>
             <Main/>
-            <Skills title={'Skills'}/>
+            <Skills/>
             <Projects/>
             <Contacts/>
             <Footer/>

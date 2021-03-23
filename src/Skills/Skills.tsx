@@ -14,8 +14,9 @@ import api from '../assets/image/skills/api.svg'
 import tdd from '../assets/image/skills/development (1).svg'
 
 type propsType = {
-    title: string
+
 }
+
 const Skills: React.FC<propsType> = () => {
     return (
         <div className={style.skillsBlock}>
