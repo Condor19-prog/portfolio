@@ -3,8 +3,7 @@
 
 .projectBlock {
   width: 400px;
-  border: 1px solid;
-  margin: 15px 0;
+  margin: 10px;
   background-color: $bgSecondColor;
 
   .imgContainer {
@@ -18,15 +17,8 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    -webkit-filter: blur(3px);
-    filter: blur(1px);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-
-    &:hover {
-      -webkit-filter: blur(0);
-      filter: blur(0);
-    }
 
     &::before {
       position: absolute;
@@ -73,7 +65,7 @@
   .footer {
     display: flex;
     flex-direction: column;
-    padding: 25px 20px 50px 25px;
+    padding: 25px 20px 35px 25px;
     align-items: flex-start;
 
     .title {

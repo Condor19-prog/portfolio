@@ -2,17 +2,21 @@
 @import '../common/styles/sass/mixins';
 
 .nav {
-  border: 1px solid;
   display: flex;
   justify-content: space-between;
   @include text($textFontFamily, 18px, 1.8);
-flex-wrap: wrap;
-
+  flex-wrap: wrap;
+  min-width: 35%;
+  margin-right: 10%;
 
   .link {
     text-decoration: none;
-    padding: 0 20px;
+    &:hover{
+      color: #ffd18b;
+      transition: 0.5s all;
+    }
   }
+
 
   a:visited {
     color: white;
