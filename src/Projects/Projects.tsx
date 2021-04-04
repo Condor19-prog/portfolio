@@ -21,32 +21,35 @@ const Projects = () => {
 
     return (
         <div className={style.projectsBlock}>
+
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <Title title={'Projects'}/>
-                <div className={style.projects}>
-                    <Project
-                        styled={social}
-                        title={'Social-network'}
-                        description={'RestAPI, React, Redux, TypeScript, Classes, Hooks, Redux-form, Axios, Grid, Module CSS'}
-                        linkTo={'https://condor19-prog.github.io/social-network'}
-                        linkToCode={'https://github.com/Condor19-prog/social-network'}
-                    />
-                    <Project
-                        styled={todolist}
-                        title={'Todolist'}
-                        description={'React, Redux, TypeScript, RestAPI, Hooks, Axios, Material-UI'}
-                        linkTo={'https://condor19-prog.github.io/new-todolist/'}
-                        linkToCode={'https://github.com/Condor19-prog/new-todolist'}
-                    />
-                    <Project
-                        styled={counter}
-                        title={'Counter'}
-                        description={'React, Redux, TypeScript, Hooks, Material-UI'}
-                        linkTo={'https://condor19-prog.github.io/counter/'}
-                        linkToCode={'https://github.com/Condor19-prog/counter'}
-                    />
-                </div>
+                    <Title title={'Projects'}/>
+                    <div className={style.projects}>
+                        <Project
+                            styled={social}
+                            title={'Social-network'}
+                            description={'RestAPI, React, Redux, TypeScript, Classes, Hooks, Redux-form, Axios, Grid, Module CSS'}
+                            linkTo={'https://condor19-prog.github.io/social-network'}
+                            linkToCode={'https://github.com/Condor19-prog/social-network'}
+                        />
+                        <Project
+                            styled={todolist}
+                            title={'Todolist'}
+                            description={'React, Redux, TypeScript, RestAPI, Hooks, Axios, Material-UI'}
+                            linkTo={'https://condor19-prog.github.io/new-todolist/'}
+                            linkToCode={'https://github.com/Condor19-prog/new-todolist'}
+                        />
+                        <Project
+                            styled={counter}
+                            title={'Counter'}
+                            description={'React, Redux, TypeScript, Hooks, Material-UI'}
+                            linkTo={'https://condor19-prog.github.io/counter/'}
+                            linkToCode={'https://github.com/Condor19-prog/counter'}
+                        />
+                    </div>
+
             </div>
+
         </div>
     )
 }

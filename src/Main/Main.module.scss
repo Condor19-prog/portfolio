@@ -4,12 +4,24 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgColor;
-  padding-top: 6%;
+
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    bottom: 0;
+    z-index: 1;
+  }
 
   .mainContainer {
+    z-index: 2;
+    padding-top: 14%;
+
     .text {
       max-width: 100%;
-      background-color: #4e4e4e;
       padding-bottom: 20px;
 
       span {

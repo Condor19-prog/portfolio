@@ -12,14 +12,13 @@ import ts from '../assets/image/skills/icons8-typescript.svg'
 import html from '../assets/image/skills/html-5.svg'
 import api from '../assets/image/skills/api.svg'
 import tdd from '../assets/image/skills/development (1).svg'
+import {Fade} from "react-awesome-reveal";
 
-type propsType = {
 
-}
-
-const Skills: React.FC<propsType> = () => {
+const Skills = () => {
     return (
         <div className={style.skillsBlock}>
+            <Fade direction={'up'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={style.skills}>
@@ -34,6 +33,7 @@ const Skills: React.FC<propsType> = () => {
                     <Skill title={'TDD'} image={tdd}/>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

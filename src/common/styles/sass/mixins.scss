@@ -6,3 +6,26 @@
   line-height: $lineHeight;
   color: $textColor;
 }
+@mixin form ($height, $padding){
+  background: $bgColor;
+  border: 1px solid rgba(74, 74, 74, 1);
+  font-size: 14px;
+  font-family: inherit;
+  padding: $padding;
+  height: $height;
+  margin-bottom: 22px;
+  outline: none;
+  color: #ffffff;
+  transition: all .5s ease-in-out;
+  &:focus {
+    border: 1px solid rgba(74, 74, 74, 0);
+  }
+}
+@mixin labelStyle($margin-top){
+  color: #961515;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  position: absolute;
+  align-self: center;
+  margin-top: $margin-top
+}

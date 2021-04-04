@@ -4,6 +4,7 @@ import style from './Contacts.module.scss'
 import {useFormik} from "formik";
 import Title from "../common/components/title/Title";
 import {Button} from "../common/components/button/Button";
+import {Fade} from "react-awesome-reveal";
 
 type FormikErrorType = {
     name?: string
@@ -31,6 +32,9 @@ const Contacts = () => {
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
                 errors.email = 'Invalid email address';
             }
+            if (!values.message) {
+                errors.message = 'Required';
+            }
             return errors;
         },
         onSubmit: values => {
@@ -40,36 +44,43 @@ const Contacts = () => {
     });
     return (
         <div className={style.contactsBlock}>
+            <Fade direction={'up'}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Contact with me'}/>
                 <form className={style.contacts} onSubmit={formik.handleSubmit}>
-                    <input
-                        className={style.formControl}
-                        type="text"
-                        placeholder='Name'
-                        {...formik.getFieldProps('name')}
-                    />
-                    {formik.touched.name && formik.errors.name ?
-                        <label className={style.labelStyle} style={{marginTop: 39}}>{formik.errors.name}</label> : null}
-                    <input
-                        className={style.formControl}
-                        type="email"
-                        placeholder='Email'
-                        {...formik.getFieldProps('email')}
-                    />
-                    {formik.touched.email && formik.errors.email ?
-                        <label className={style.labelStyle}
-                               style={{marginTop: 98}}>{formik.errors.email}</label> : null}
+                    <div className={style.entryField}>
+                        <input
+                            className={style.formControl}
+                            type="text"
+                            placeholder='Name'
+                            {...formik.getFieldProps('name')}
+                        />
+                        {formik.touched.name && formik.errors.name ?
+                            <span className={style.labelStyle}>{formik.errors.name}</span> : null}
+                    </div>
+                    <div className={style.entryField}>
+                        <input
+                            className={style.formControl}
+                            type="email"
+                            placeholder='Email'
+                            {...formik.getFieldProps('email')}
+                        />
+                        {formik.touched.email && formik.errors.email ?
+                            <span className={style.labelStyle}>{formik.errors.email}</span> : null}
+                    </div>
+                    <div className={style.entryField}>
                     <textarea
-                        className={style.formControl}
-                        style={{height: 153, padding: '10px 10px 10px 10px'}}
+                        className={style.formControlTextarea}
                         placeholder='Your message'
                         {...formik.getFieldProps('message')}
                     />
+                        {formik.touched.message && formik.errors.message ?
+                            <span className={style.labelStyleTextarea}>{formik.errors.message}</span> : null}
+                    </div>
                     <Button/>
-
                 </form>
             </div>
+            </Fade>
         </div>
     )
 }

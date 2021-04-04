@@ -9,7 +9,7 @@ export const Button = () => {
                         <polyline points="179,1 179,59 1,59 1,1 179,1" />
                         <polyline points="179,1 179,59 1,59 1,1 179,1" />
                     </svg>
-                    <span>HOVER ME</span>
+                    <span>Send Message</span>
                 </button>
              </div>
          // </div>
