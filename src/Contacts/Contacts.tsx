@@ -3,6 +3,7 @@ import styleContainer from '../common/styles/Container.module.css'
 import style from './Contacts.module.scss'
 import {useFormik} from "formik";
 import Title from "../common/components/title/Title";
+import {Button} from "../common/components/button/Button";
 
 type FormikErrorType = {
     name?: string
@@ -80,9 +81,10 @@ const Contacts = () => {
                         {...formik.getFieldProps('message')}
                     />
 
-                    <button className={style.btnContacts} type="submit">
-                        Submit
-                    </button>
+                    {/*<button className={style.btnContacts} type="submit">*/}
+                    {/*    Submit*/}
+                    {/*</button>*/}
+                    <Button/>
 
                 </form>
             </div>
