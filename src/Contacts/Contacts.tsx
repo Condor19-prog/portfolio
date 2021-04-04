@@ -21,15 +21,15 @@ const Contacts = () => {
         },
         validate: values => {
             const errors: FormikErrorType = {}
+            if (!values.name) {
+                errors.name = 'Required';
+            } else if (values.name.length <= 3) {
+                errors.name = 'The field cannot be empty';
+            }
             if (!values.email) {
                 errors.email = 'Required';
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
                 errors.email = 'Invalid email address';
-            }
-            if (!values.name) {
-                errors.name = 'Required';
-            } else if (values.name.length <= 0) {
-                errors.name = 'The field cannot be empty';
             }
             return errors;
         },
@@ -50,14 +50,7 @@ const Contacts = () => {
                         {...formik.getFieldProps('name')}
                     />
                     {formik.touched.name && formik.errors.name ?
-                        <label style={{
-                            color: '#961515',
-                            fontSize: '14px',
-                            fontFamily: `'Poppins', sans-serif`,
-                            position: "absolute",
-                            marginTop: 39,
-                            alignSelf: 'center'
-                        }}>{formik.errors.name}</label> : null}
+                        <label className={style.labelStyle} style={{marginTop: 39}}>{formik.errors.name}</label> : null}
                     <input
                         className={style.formControl}
                         type="email"
@@ -65,25 +58,14 @@ const Contacts = () => {
                         {...formik.getFieldProps('email')}
                     />
                     {formik.touched.email && formik.errors.email ?
-                        <label style={{
-                            color: '#961515',
-                            fontFamily: `'Poppins', sans-serif`,
-                            fontSize: '14px',
-                            position: "absolute",
-                            marginTop: 98,
-                            alignSelf: 'center'
-                        }}>{formik.errors.email}</label> : null}
-
+                        <label className={style.labelStyle}
+                               style={{marginTop: 98}}>{formik.errors.email}</label> : null}
                     <textarea
                         className={style.formControl}
                         style={{height: 153, padding: '10px 10px 10px 10px'}}
                         placeholder='Your message'
                         {...formik.getFieldProps('message')}
                     />
-
-                    {/*<button className={style.btnContacts} type="submit">*/}
-                    {/*    Submit*/}
-                    {/*</button>*/}
                     <Button/>
 
                 </form>
