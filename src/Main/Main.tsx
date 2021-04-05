@@ -3,6 +3,8 @@ import style from './Main.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import Particles from "react-particles-js";
 import {Fade} from "react-awesome-reveal";
+import ReactParallaxTilt from "react-parallax-tilt";
+import ReactTypingEffect from "react-typing-effect";
 
 const Main = () => {
 
@@ -108,22 +110,23 @@ const Main = () => {
         },
         "retina_detect": true
     }
-
+    const text = <ReactTypingEffect text={'Frontend Developer.'}/>
     return (
         <div className={style.mainBlock}>
-
             <Particles className={style.particles} params={particlesOpt}/>
-            <Fade damping={0} direction={'up'} fraction={1} triggerOnce={true}>
-                <div className={`${styleContainer.container} ${style.mainContainer}`}>
+            <div className={`${styleContainer.container} ${style.mainContainer}`}>
+                <Fade style={{zIndex: 1}} damping={0} direction={'up'} fraction={0.1} triggerOnce>
                     <div className={style.text}>
                         <span>Hi There</span>
                         <h1>I am <br/>
                             Yauheni Auchynnikau</h1>
-                        <p>A Frontend Developer</p>
+                        <span>A {text}</span>
                     </div>
-                    <div className={style.photo}></div>
-                </div>
-            </Fade>
+                    <ReactParallaxTilt>
+                        <div className={style.image}/>
+                    </ReactParallaxTilt>
+                </Fade>
+            </div>
         </div>
     )
 }

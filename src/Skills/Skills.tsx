@@ -19,7 +19,7 @@ const Skills = () => {
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce={true}>
+                <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce>
                     <Title title={'Skills'}/>
                     <div className={style.skills}>
                         <Skill title={'JavaScript'} image={js}/>

@@ -9,11 +9,11 @@ type projectsType = {
 const Title: React.FC<projectsType> = ({title}) => {
 
     return (
-        <Fade direction={'up'}>
-        <div className={style.title}>
-            <h2>{title}</h2>
-        </div>
-            </Fade>
+        <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce>
+            <div className={style.title}>
+                <h2>{title}</h2>
+            </div>
+        </Fade>
     )
 }
 export default Title
