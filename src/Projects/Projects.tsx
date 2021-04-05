@@ -21,7 +21,7 @@ const Projects = () => {
     }
 
     return (
-        <div className={style.projectsBlock}>
+        <div className={style.projectsBlock} id={'projects'}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce={true}>
                     <Title title={'Projects'}/>

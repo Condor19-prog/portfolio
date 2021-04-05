@@ -112,7 +112,7 @@ const Main = () => {
     }
     const text = <ReactTypingEffect text={'Frontend Developer.'}/>
     return (
-        <div className={style.mainBlock}>
+        <div className={style.mainBlock} id={'main'}>
             <Particles className={style.particles} params={particlesOpt}/>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <Fade style={{zIndex: 1}} damping={0} direction={'up'} fraction={0.1} triggerOnce>

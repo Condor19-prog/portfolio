@@ -17,7 +17,7 @@ import {Fade} from "react-awesome-reveal";
 
 const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id={'skills'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce>
                     <Title title={'Skills'}/>
