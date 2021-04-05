@@ -18,22 +18,22 @@ import {Fade} from "react-awesome-reveal";
 const Skills = () => {
     return (
         <div className={style.skillsBlock}>
-            <Fade direction={'up'}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title title={'Skills'}/>
-                <div className={style.skills}>
-                    <Skill title={'JavaScript'} image={js}/>
-                    <Skill title={'TypeScript'} image={ts}/>
-                    <Skill title={'React'} image={react}/>
-                    <Skill title={'Redux'} image={redux}/>
-                    <Skill title={'CSS'} image={css}/>
-                    <Skill title={'SCSS'} image={sass}/>
-                    <Skill title={'HTML'} image={html}/>
-                    <Skill title={'REST API'} image={api}/>
-                    <Skill title={'TDD'} image={tdd}/>
-                </div>
+                <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce={true}>
+                    <Title title={'Skills'}/>
+                    <div className={style.skills}>
+                        <Skill title={'JavaScript'} image={js}/>
+                        <Skill title={'TypeScript'} image={ts}/>
+                        <Skill title={'React'} image={react}/>
+                        <Skill title={'Redux'} image={redux}/>
+                        <Skill title={'CSS'} image={css}/>
+                        <Skill title={'SCSS'} image={sass}/>
+                        <Skill title={'HTML'} image={html}/>
+                        <Skill title={'REST API'} image={api}/>
+                        <Skill title={'TDD'} image={tdd}/>
+                    </div>
+                </Fade>
             </div>
-            </Fade>
         </div>
     )
 }

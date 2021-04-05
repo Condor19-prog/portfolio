@@ -112,8 +112,8 @@ const Main = () => {
     return (
         <div className={style.mainBlock}>
 
-                <Particles className={style.particles} params={particlesOpt}/>
-            <Fade direction={'up'}>
+            <Particles className={style.particles} params={particlesOpt}/>
+            <Fade damping={0} direction={'up'} fraction={1} triggerOnce={true}>
                 <div className={`${styleContainer.container} ${style.mainContainer}`}>
                     <div className={style.text}>
                         <span>Hi There</span>

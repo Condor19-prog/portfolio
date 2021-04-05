@@ -44,7 +44,7 @@ const Contacts = () => {
     });
     return (
         <div className={style.contactsBlock}>
-            <Fade direction={'up'}>
+            <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce={true}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Contact with me'}/>
                 <form className={style.contacts} onSubmit={formik.handleSubmit}>

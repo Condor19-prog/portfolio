@@ -6,6 +6,7 @@ import Title from "../common/components/title/Title";
 import socialNetwork from '../assets/image/projects/socialNetwork.jpg'
 import myTodolist from '../assets/image/projects/todolists.png'
 import myCounter from '../assets/image/projects/counter.png'
+import {Fade} from "react-awesome-reveal";
 
 const Projects = () => {
 
@@ -21,8 +22,8 @@ const Projects = () => {
 
     return (
         <div className={style.projectsBlock}>
-
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+                <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce={true}>
                     <Title title={'Projects'}/>
                     <div className={style.projects}>
                         <Project
@@ -47,9 +48,8 @@ const Projects = () => {
                             linkToCode={'https://github.com/Condor19-prog/counter'}
                         />
                     </div>
-
+                </Fade>
             </div>
-
         </div>
     )
 }

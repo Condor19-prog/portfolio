@@ -25,7 +25,7 @@ const Footer = () => {
 
     return (
         <div className={style.footerBlock}>
-            <Fade direction={'up'}>
+            <Fade damping={0} direction={'up'} fraction={0.1} triggerOnce={true}>
                 <div className={`${styleContainer.container} ${style.footerContainer}`}>
                     <div className={style.footerSocialContainer}>
                         <SocialNetwork link={gitHub.link} image={gitHub.image}/>
