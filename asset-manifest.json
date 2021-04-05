@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.79e50c7d.chunk.css",
-    "main.js": "/portfolio/static/js/main.0307b6a6.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0307b6a6.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.2199e597.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2199e597.js.map",
-    "static/js/2.a67b3f24.chunk.js": "/portfolio/static/js/2.a67b3f24.chunk.js",
-    "static/js/2.a67b3f24.chunk.js.map": "/portfolio/static/js/2.a67b3f24.chunk.js.map",
-    "static/js/3.c8711936.chunk.js": "/portfolio/static/js/3.c8711936.chunk.js",
-    "static/js/3.c8711936.chunk.js.map": "/portfolio/static/js/3.c8711936.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1ce1210e.chunk.css",
+    "main.js": "/portfolio/static/js/main.0c839575.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0c839575.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.fd6100fc.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.fd6100fc.js.map",
+    "static/js/2.72ddc1e6.chunk.js": "/portfolio/static/js/2.72ddc1e6.chunk.js",
+    "static/js/2.72ddc1e6.chunk.js.map": "/portfolio/static/js/2.72ddc1e6.chunk.js.map",
+    "static/js/3.d0f75454.chunk.js": "/portfolio/static/js/3.d0f75454.chunk.js",
+    "static/js/3.d0f75454.chunk.js.map": "/portfolio/static/js/3.d0f75454.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.79e50c7d.chunk.css.map": "/portfolio/static/css/main.79e50c7d.chunk.css.map",
-    "static/js/2.a67b3f24.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a67b3f24.chunk.js.LICENSE.txt",
+    "static/css/main.1ce1210e.chunk.css.map": "/portfolio/static/css/main.1ce1210e.chunk.css.map",
+    "static/js/2.72ddc1e6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.72ddc1e6.chunk.js.LICENSE.txt",
     "static/media/api.661133a5.svg": "/portfolio/static/media/api.661133a5.svg",
     "static/media/cascading-style-sheets.e7b6cc2c.svg": "/portfolio/static/media/cascading-style-sheets.e7b6cc2c.svg",
     "static/media/counter.26b8de4e.png": "/portfolio/static/media/counter.26b8de4e.png",
@@ -29,9 +29,9 @@
     "static/media/vk.1c89cf28.svg": "/portfolio/static/media/vk.1c89cf28.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2199e597.js",
-    "static/js/2.a67b3f24.chunk.js",
-    "static/css/main.79e50c7d.chunk.css",
-    "static/js/main.0307b6a6.chunk.js"
+    "static/js/runtime-main.fd6100fc.js",
+    "static/js/2.72ddc1e6.chunk.js",
+    "static/css/main.1ce1210e.chunk.css",
+    "static/js/main.0c839575.chunk.js"
   ]
 }
