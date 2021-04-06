@@ -11,7 +11,7 @@ const BurgerMenu = () => {
 
     return (
         <div className={style.container}>
-            <div className={show ? style.hamburger : `${style.hamburger} ${style.active}`} onClick={onToggleMenu}>
+            <div className={show ? `${style.hamburger} ${style.active}` : style.hamburger} onClick={onToggleMenu}>
                 <span className={style.lineLine1}></span>
                 <span className={style.lineLine2}></span>
                 <span className={style.lineLine3}></span>

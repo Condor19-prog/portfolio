@@ -3,7 +3,8 @@
   width: 75px;
   height: 35px;
   position: relative;
-  margin: 15px;
+  margin: 0;
+  cursor: pointer;
 
   &:hover, &:focus {
     .lineLine1 {
@@ -21,6 +22,7 @@
     }
 
     .lineLine2 {
+      transform: rotate(360deg);
       opacity: 0;
     }
 
@@ -31,9 +33,9 @@
 }
 
 .lineLine1 {
-  background: black;
-  width: 75px;
-  height: 10px;
+  background: #ffffff;
+  width: 50px;
+  height: 5px;
   position: absolute;
   border-radius: 5px;
   top: 0;
@@ -41,9 +43,9 @@
 }
 
 .lineLine2 {
-  background: black;
-  width: 75px;
-  height: 10px;
+  background: #ffffff;
+  width: 50px;
+  height: 5px;
   position: absolute;
   border-radius: 5px;
   top: 50%;
@@ -51,9 +53,9 @@
 }
 
 .lineLine3 {
-  background: black;
-  width: 75px;
-  height: 10px;
+  background: #ffffff;
+  width: 50px;
+  height: 5px;
   position: absolute;
   border-radius: 5px;
   top: 100%;
