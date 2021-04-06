@@ -1,73 +1,75 @@
+@import '../portfolio/src/common/styles/sass/variable';
 
-.hamburger {
-  width: 75px;
-  height: 35px;
-  position: relative;
-  margin: 0;
-  cursor: pointer;
+.burgerNav {
+  width: 100%;
+  height: 100%;
 
-  &:hover, &:focus {
-    .lineLine1 {
-      transform: translateY(-4px);
+  .burgerNavItems {
+    right: 0;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: $bgColor;
+    height: 0;
+    padding: 20px;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+
+    & a {
+      font-family: 'Baloo Tammudu 2', cursive;
+      line-height: 30px;
+      font-weight: 600;
+      color: $textColor;
+      font-size: 18px;
+      position: relative;
+      margin-left: -4px;
+      padding: 0 20px;
+      display: inline-block;
+      box-sizing: inherit;
+      outline: none;
+      text-align: -webkit-match-parent;
+      list-style: none;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+        color: $primaryColor;
+      }
     }
 
-    .lineLine3 {
-      transform: translateY(4px);
+    .active {
+      color: $primaryColor;
     }
   }
 
-  &.active {
-    .lineLine1 {
-      transform: translateY(17.5px) rotate(45deg);
-    }
+  .show {
+    transform: translate(0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 150px;
+  }
 
-    .lineLine2 {
-      transform: rotate(360deg);
-      opacity: 0;
-    }
+  .burgerBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 20px;
 
-    .lineLine3 {
-      transform: translateY(-17.5px) rotate(-45deg);
+    .menu {
+      height: 32px;
+      width: 32px;
     }
   }
-}
 
-.lineLine1 {
-  background: #ffffff;
-  width: 50px;
-  height: 5px;
-  position: absolute;
-  border-radius: 5px;
-  top: 0;
-  transition: all 1s;
-}
-
-.lineLine2 {
-  background: #ffffff;
-  width: 50px;
-  height: 5px;
-  position: absolute;
-  border-radius: 5px;
-  top: 50%;
-  transition: all .8s;
-}
-
-.lineLine3 {
-  background: #ffffff;
-  width: 50px;
-  height: 5px;
-  position: absolute;
-  border-radius: 5px;
-  top: 100%;
-  transition: all 1s;
-}
-.links{
-  transform: translate(0);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  flex-wrap: nowrap;
-  height: 150px;
+  @media screen and (min-width: 401px) {
+    display: none;
+  }
 }

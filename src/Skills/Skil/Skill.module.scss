@@ -1,5 +1,6 @@
 @import "./src/common/styles/sass/variable";
 @import "./src/common/styles/sass/mixins";
+
 .skill {
   width: 250px;
   height: 100%;
@@ -14,12 +15,12 @@
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-
+  cursor: default;
 
   &:hover {
-    -webkit-transform: translate(0,-10px);
-    -moz-transform: translate(0,-10px);
-    -o-transform: translate(0,-10px);
+    -webkit-transform: translate(0, -10px);
+    -moz-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
   }
 
   .imgContainer {

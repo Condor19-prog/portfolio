@@ -1,25 +1,57 @@
-import React, {useState} from "react";
-import Nav from "../../../Nav/Nav";
-import style from './burgerMenu.module.scss'
+import React, {useState} from 'react';
+import style from './burgerMenu.module.scss';
+import {Link} from "react-scroll";
+import burgerMenu from '../burgerMenu/buttonBurger.module.scss'
 
-const BurgerMenu = () => {
-    const [show, setShow] = useState(false)
+const BurgerNav = () => {
+    const [toggleBurger, setToggleBurger] = useState(false)
 
-    const onToggleMenu = () => {
-        setShow(!show)
+    const toggleBurgerMenu = () => {
+        setToggleBurger(!toggleBurger)
+        console.log(toggleBurger)
     }
 
+
     return (
-        <div className={style.container}>
-            <div className={show ? `${style.hamburger} ${style.active}` : style.hamburger} onClick={onToggleMenu}>
-                <span className={style.lineLine1}></span>
-                <span className={style.lineLine2}></span>
-                <span className={style.lineLine3}></span>
+        <div className={style.burgerNav}>
+            <div className={toggleBurger ? `${style.burgerNavItems} ${style.show}` : style.burgerNavItems}>
+                <Link activeClass={style.active}
+                      to="main"
+                      spy={true}
+                      smooth={true}
+                      offset={1}
+                      duration={2000}>HOME PAGE
+                </Link>
+                <Link activeClass={style.active}
+                      to="skills"
+                      spy={true}
+                      smooth={true}
+                      offset={1}
+                      duration={2000}>SKILLS
+                </Link>
+                <Link activeClass={style.active}
+                      to="projects"
+                      spy={true}
+                      smooth={true}
+                      offset={1}
+                      duration={3000}>MY WORKS
+                </Link>
+                <Link activeClass={style.active}
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={2000}>CONTACT ME
+                </Link>
             </div>
-            {show && <div className={style.links}>
-                <Nav/>
-            </div>}
+            <div id="menuToggle" onClick={toggleBurgerMenu} className={style.burgerBtn}>
+                <input type="checkbox"/>
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
         </div>
-    )
+    );
 }
-export default BurgerMenu
+
+export default BurgerNav;
