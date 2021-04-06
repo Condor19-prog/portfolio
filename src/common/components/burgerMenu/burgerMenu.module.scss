@@ -1,0 +1,71 @@
+
+.hamburger {
+  width: 75px;
+  height: 35px;
+  position: relative;
+  margin: 15px;
+
+  &:hover, &:focus {
+    .lineLine1 {
+      transform: translateY(-4px);
+    }
+
+    .lineLine3 {
+      transform: translateY(4px);
+    }
+  }
+
+  &.active {
+    .lineLine1 {
+      transform: translateY(17.5px) rotate(45deg);
+    }
+
+    .lineLine2 {
+      opacity: 0;
+    }
+
+    .lineLine3 {
+      transform: translateY(-17.5px) rotate(-45deg);
+    }
+  }
+}
+
+.lineLine1 {
+  background: black;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  transition: all 1s;
+}
+
+.lineLine2 {
+  background: black;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  transition: all .8s;
+}
+
+.lineLine3 {
+  background: black;
+  width: 75px;
+  height: 10px;
+  position: absolute;
+  border-radius: 5px;
+  top: 100%;
+  transition: all 1s;
+}
+.links{
+  transform: translate(0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  flex-wrap: nowrap;
+  height: 150px;
+}

@@ -1,14 +1,24 @@
 import React, {useState} from "react";
+import Nav from "../../../Nav/Nav";
+import style from './burgerMenu.module.scss'
 
 const BurgerMenu = () => {
-    const [toggle, setToggle] = useState(true)
+    const [show, setShow] = useState(false)
 
     const onToggleMenu = () => {
-        setToggle(!toggle)
+        setShow(!show)
     }
-    return (
-        <div onClick={onToggleMenu}>
 
+    return (
+        <div className={style.container}>
+            <div className={show ? style.hamburger : `${style.hamburger} ${style.active}`} onClick={onToggleMenu}>
+                <span className={style.lineLine1}></span>
+                <span className={style.lineLine2}></span>
+                <span className={style.lineLine3}></span>
+            </div>
+            {show && <div className={style.links}>
+                <Nav/>
+            </div>}
         </div>
     )
 }
