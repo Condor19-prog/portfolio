@@ -7,7 +7,7 @@ import BurgerMenu from "../common/components/burgerMenu/BurgerMenu";
 const Header = () => {
     return (
         <div className={style.header}>
-            {/*<Nav/>*/}
+            <Nav/>
             <BurgerMenu/>
         </div>
     )

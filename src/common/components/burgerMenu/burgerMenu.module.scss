@@ -5,29 +5,30 @@
   height: 100%;
 
   .burgerNavItems {
-    right: 0;
-    left: 0;
-    top: 0;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    right: 0;
+    left: 0;
+    top: 0;
     background-color: $bgColor;
     height: 0;
     padding: 20px;
     transform: translate(0, -150px);
-    transition: 0.7s;
+    transition: .8s;
 
     & a {
-      font-family: 'Baloo Tammudu 2', cursive;
+      font-family: $textFontFamily;
       line-height: 30px;
       font-weight: 600;
       color: $textColor;
       font-size: 18px;
-      position: relative;
+      //position: relative;
       margin-left: -4px;
       padding: 0 20px;
-      display: inline-block;
+      //display: inline-block;
       box-sizing: inherit;
       outline: none;
       text-align: -webkit-match-parent;
@@ -37,12 +38,15 @@
 
       &:hover {
         text-decoration: none;
-        color: $primaryColor;
+        color: #ffd18b;
+        transition: 0.5s all;
+        cursor: pointer;
       }
     }
 
     .active {
-      color: $primaryColor;
+      color: #ffd18b;
+      transition: 0.5s all;
     }
   }
 
@@ -68,8 +72,7 @@
       width: 32px;
     }
   }
-
-  @media screen and (min-width: 401px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 }

@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import style from './burgerMenu.module.scss';
 import {Link} from "react-scroll";
-import burgerMenu from '../burgerMenu/buttonBurger.module.scss'
+import './ButtonBurger.scss'
+
 
 const BurgerNav = () => {
     const [toggleBurger, setToggleBurger] = useState(false)
 
     const toggleBurgerMenu = () => {
         setToggleBurger(!toggleBurger)
-        console.log(toggleBurger)
     }
 
 
@@ -20,28 +20,28 @@ const BurgerNav = () => {
                       spy={true}
                       smooth={true}
                       offset={1}
-                      duration={2000}>HOME PAGE
+                      duration={2000}>Home
                 </Link>
                 <Link activeClass={style.active}
                       to="skills"
                       spy={true}
                       smooth={true}
                       offset={1}
-                      duration={2000}>SKILLS
+                      duration={2000}>Skills
                 </Link>
                 <Link activeClass={style.active}
                       to="projects"
                       spy={true}
                       smooth={true}
                       offset={1}
-                      duration={3000}>MY WORKS
+                      duration={3000}>Projects
                 </Link>
                 <Link activeClass={style.active}
                       to="contact"
                       spy={true}
                       smooth={true}
                       offset={0}
-                      duration={2000}>CONTACT ME
+                      duration={2000}>Contact me
                 </Link>
             </div>
             <div id="menuToggle" onClick={toggleBurgerMenu} className={style.burgerBtn}>

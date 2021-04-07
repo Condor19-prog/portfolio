@@ -7,9 +7,9 @@ const Nav = () => {
         <div className={style.nav}>
             <Link className={style.link}
                   activeClass={style.active}
-                  spy
+                  spy={true}
                   offset={0}
-                  smooth
+                  smooth={true}
                   duration={500}
                   to="main">Home
             </Link>

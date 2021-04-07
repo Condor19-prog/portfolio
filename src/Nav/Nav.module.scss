@@ -23,16 +23,17 @@
     }
   }
 
-
   a:visited {
     color: white;
   }
-  @media screen and (max-width: 1024px){
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 0;
-    min-width: 0%;
-
+  //@media screen and (max-width: 1024px){
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: space-between;
+  //  margin-right: 0;
+  //  min-width: 0%;
+  //}
+  @media screen and(max-width: 1024px) {
+    display: none;
   }
 }
