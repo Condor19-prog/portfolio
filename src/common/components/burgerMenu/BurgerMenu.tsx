@@ -19,25 +19,25 @@ const BurgerNav = () => {
                       to="main"
                       spy={true}
                       smooth={true}
-                      offset={1}
+                      offset={0}
                       duration={2000}>Home
                 </Link>
                 <Link activeClass={style.active}
                       to="skills"
                       spy={true}
                       smooth={true}
-                      offset={1}
+                      offset={0}
                       duration={2000}>Skills
                 </Link>
                 <Link activeClass={style.active}
                       to="projects"
                       spy={true}
                       smooth={true}
-                      offset={1}
+                      offset={0}
                       duration={3000}>Projects
                 </Link>
                 <Link activeClass={style.active}
-                      to="contact"
+                      to="contacts"
                       spy={true}
                       smooth={true}
                       offset={0}

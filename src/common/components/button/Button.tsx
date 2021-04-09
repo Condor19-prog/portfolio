@@ -2,7 +2,6 @@ import style from './button.module.scss'
 
 export const Button = () => {
     return (
-        // <div className={style.container}>
             <div className={style.center}>
                 <button className={style.btn}>
                     <svg width="180px" height="60px" viewBox="0 0 180 60" >
@@ -12,6 +11,5 @@ export const Button = () => {
                     <span>Send Message</span>
                 </button>
              </div>
-         // </div>
     )
 }
