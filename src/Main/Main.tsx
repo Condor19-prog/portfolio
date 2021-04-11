@@ -5,6 +5,7 @@ import Particles from "react-particles-js";
 import {Fade} from "react-awesome-reveal";
 import ReactParallaxTilt from "react-parallax-tilt";
 import ReactTypingEffect from "react-typing-effect";
+import photo from '../assets/photo.jpeg'
 
 const Main = () => {
 
@@ -29,7 +30,7 @@ const Main = () => {
             },
             "opacity": {
                 "value": 0.5,
-                "random": false,
+                "random": true,
                 "anim": {
                     "enable": false,
                     "speed": 1,
@@ -123,7 +124,9 @@ const Main = () => {
                         <span>A {text}</span>
                     </div>
                     <ReactParallaxTilt>
-                        <div className={style.image}/>
+                        <div className={style.image}>
+                            <img className={style.photo} src={photo} alt={'img'}/>
+                        </div>
                     </ReactParallaxTilt>
                 </Fade>
             </div>
